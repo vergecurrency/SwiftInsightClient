@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct Info: Decodable {
+public struct VIInfo: Decodable {
 
     /// Overriding the property names, with custom property names
     /// when the json field is different, requires defining a `CodingKeys`

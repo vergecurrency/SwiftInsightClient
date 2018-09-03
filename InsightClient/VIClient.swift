@@ -1,5 +1,5 @@
 //
-//  Client.swift
+//  VIClient.swift
 //  InsightClient
 //
 //  Created by Swen van Zanten on 28-08-18.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public class Client: ClientProtocol {
+public class VIClient: VIClientProtocol {
 
     var urlSession: URLSession!
     var endpoint: String!
@@ -50,9 +50,9 @@ public class Client: ClientProtocol {
         task.resume()
     }
 
-    public func getInfo(completion: @escaping (Info?) -> Void) {
+    public func getInfo(completion: @escaping (VIInfo?) -> Void) {
         get(url: url("/status?q=getInfo")) { data in
-            completion(self.decodeJson(Info.self, from: data, default: []) as? Info)
+            completion(self.decodeJson(VIInfo.self, from: data, default: []) as? VIInfo)
         }
     }
 
@@ -76,9 +76,9 @@ public class Client: ClientProtocol {
         }
     }
 
-    public func getLastBlockHash(completion: @escaping (LastBlockIdentity?) -> Void) {
+    public func getLastBlockHash(completion: @escaping (VILastBlockIdentity?) -> Void) {
         get(url: url("/status?q=getLastBlockHash")) { data in
-            completion(self.decodeJson(LastBlockIdentity.self, from: data, default: []) as? LastBlockIdentity)
+            completion(self.decodeJson(VILastBlockIdentity.self, from: data, default: []) as? VILastBlockIdentity)
         }
     }
 
@@ -93,14 +93,14 @@ public class Client: ClientProtocol {
         showTransactions: Bool? = true,
         from: Int? = 0,
         to: Int? = 0,
-        completion: @escaping (AddressSummary?) -> Void
+        completion: @escaping (VIAddressSummary?) -> Void
     ) {
         let noTxList = (showTransactions ?? true) ? "0" : "1"
         let f = from ?? 0
         let t = to ?? 0
 
         get(url: url("/addr/\(address)?from=\(f)&to=\(t)&noTxList=\(noTxList)")) { data in
-            completion(self.decodeJson(AddressSummary.self, from: data, default: []) as? AddressSummary)
+            completion(self.decodeJson(VIAddressSummary.self, from: data, default: []) as? VIAddressSummary)
         }
     }
 
@@ -128,28 +128,28 @@ public class Client: ClientProtocol {
         }
     }
 
-    public func getUnspentOutputs(address: String, completion: @escaping ([UnspentOutput]) -> Void) {
+    public func getUnspentOutputs(address: String, completion: @escaping ([VIUnspentOutput]) -> Void) {
         get(url: url("/addr/\(address)/utxo")) { data in
-            completion(self.decodeJson([UnspentOutput].self, from: data, default: []) as! [UnspentOutput])
+            completion(self.decodeJson([VIUnspentOutput].self, from: data, default: []) as! [VIUnspentOutput])
         }
     }
 
     public func getUnspentOutputsFormMultipleAddresses(
         addresses: [String],
-        completion: @escaping ([UnspentOutput]) -> Void
+        completion: @escaping ([VIUnspentOutput]) -> Void
     ) {
         get(url: url("/addrs/\(addresses.joined(separator: ","))/utxo")) { data in
-            completion(self.decodeJson([UnspentOutput].self, from: data, default: []) as! [UnspentOutput])
+            completion(self.decodeJson([VIUnspentOutput].self, from: data, default: []) as! [VIUnspentOutput])
         }
     }
 
-    public func getBlock(hash: String, completion: @escaping (Block?) -> Void) {
+    public func getBlock(hash: String, completion: @escaping (VIBlock?) -> Void) {
         get(url: url("/block/\(hash)")) { data in
-            completion(self.decodeJson(Block.self, from: data, default: nil) as? Block)
+            completion(self.decodeJson(VIBlock.self, from: data, default: nil) as? VIBlock)
         }
     }
 
-    public func getBlock(index: Int, completion: @escaping (Block?) -> Void) {
+    public func getBlock(index: Int, completion: @escaping (VIBlock?) -> Void) {
         getBlockHash(index: index) { hash in
             if let hash = hash {
                 self.getBlock(hash: hash) { block in
@@ -161,7 +161,7 @@ public class Client: ClientProtocol {
         }
     }
 
-    public func getBlocks(date: Date, limit: Int = 0, completion: @escaping (BlockSummary?) -> Void) {
+    public func getBlocks(date: Date, limit: Int = 0, completion: @escaping (VIBlockSummary?) -> Void) {
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "yyyy-MM-dd"
 
@@ -171,7 +171,7 @@ public class Client: ClientProtocol {
         }
 
         get(url: self.url(url)) { data in
-            completion(self.decodeJson(BlockSummary.self, from: data, default: nil) as? BlockSummary)
+            completion(self.decodeJson(VIBlockSummary.self, from: data, default: nil) as? VIBlockSummary)
         }
     }
 
@@ -191,21 +191,21 @@ public class Client: ClientProtocol {
         }
     }
 
-    public func getTransaction(id: String, completion: @escaping (Transaction?) -> Void) {
+    public func getTransaction(id: String, completion: @escaping (VITransaction?) -> Void) {
         get(url: self.url("/tx/\(id)")) { data in
-            completion(self.decodeJson(Transaction.self, from: data, default: nil) as? Transaction)
+            completion(self.decodeJson(VITransaction.self, from: data, default: nil) as? VITransaction)
         }
     }
 
-    public func getTransactions(byBlockhash: String, completion: @escaping (TransactionSummary?) -> Void) {
+    public func getTransactions(byBlockhash: String, completion: @escaping (VITransactionSummary?) -> Void) {
         get(url: self.url("/txs?block=\(byBlockhash)")) { data in
-            completion(self.decodeJson(TransactionSummary.self, from: data, default: nil) as? TransactionSummary)
+            completion(self.decodeJson(VITransactionSummary.self, from: data, default: nil) as? VITransactionSummary)
         }
     }
 
-    public func getTransactions(byAddress: String, completion: @escaping (TransactionSummary?) -> Void) {
+    public func getTransactions(byAddress: String, completion: @escaping (VITransactionSummary?) -> Void) {
         get(url: self.url("/txs?address=\(byAddress)")) { data in
-            completion(self.decodeJson(TransactionSummary.self, from: data, default: nil) as? TransactionSummary)
+            completion(self.decodeJson(VITransactionSummary.self, from: data, default: nil) as? VITransactionSummary)
         }
     }
 
@@ -213,7 +213,7 @@ public class Client: ClientProtocol {
         byAddresses: [String],
         from: Int? = 0,
         to: Int? = 10,
-        completion: @escaping (TransactionCollection?) -> Void
+        completion: @escaping (VITransactionCollection?) -> Void
     ) {
         var url = "/addrs/\(byAddresses.joined(separator: ","))/txs"
         if let from = from {
@@ -221,7 +221,7 @@ public class Client: ClientProtocol {
         }
 
         get(url: self.url(url)) { data in
-            completion(self.decodeJson(TransactionCollection.self, from: data, default: nil) as? TransactionCollection)
+            completion(self.decodeJson(VITransactionCollection.self, from: data, default: nil) as? VITransactionCollection)
         }
     }
 

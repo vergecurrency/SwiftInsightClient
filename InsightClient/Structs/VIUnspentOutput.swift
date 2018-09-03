@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct UnspentOutput: Decodable {
+public struct VIUnspentOutput: Decodable {
 
     public let address: String
     public let txid: String

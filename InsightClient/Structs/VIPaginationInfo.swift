@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct PaginationInfo: Decodable {
+public struct VIPaginationInfo: Decodable {
     public let next: String
     public let prev: String
     public let currentTs: Int

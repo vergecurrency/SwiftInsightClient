@@ -5,9 +5,9 @@
 
 import Foundation
 
-public struct TransactionCollection: Decodable {
+public struct VITransactionCollection: Decodable {
     public let totalItems: Int
     public let from: Int
     public let to: Int
-    public let items: [Transaction]
+    public let items: [VITransaction]
 }

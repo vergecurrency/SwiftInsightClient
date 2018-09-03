@@ -11,12 +11,12 @@ import XCTest
 
 class InsightClientTests: XCTestCase {
 
-    var client: Client!
+    var client: VIClient!
     let session = MockURLSession()
 
     override func setUp() {
         super.setUp()
-        client = Client(urlSession: session, endpoint: "https://blockexplorer.com/api")
+        client = VIClient(urlSession: session, endpoint: "https://blockexplorer.com/api")
     }
     
     func testGetInfo() {

@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct PoolInfo: Decodable {
-    public let poolName: String?
-    public let url: String?
+public struct VILastBlockIdentity: Decodable {
+    public let syncTipHash: String
+    public let lastblockhash: String
 }

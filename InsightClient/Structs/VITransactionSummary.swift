@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct TransactionSummary: Decodable {
+public struct VITransactionSummary: Decodable {
     public let pagesTotal: Int
-    public let txs: [Transaction]
+    public let txs: [VITransaction]
 }

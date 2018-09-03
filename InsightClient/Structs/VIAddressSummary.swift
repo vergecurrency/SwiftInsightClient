@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct AddressSummary: Decodable {
+public struct VIAddressSummary: Decodable {
 
     enum AddressSummaryKeys: String, CodingKey {
         case addrStr

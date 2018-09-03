@@ -5,8 +5,8 @@
 
 import Foundation
 
-public struct BlockSummary: Decodable {
-    public let blocks: [BlockInfo]
+public struct VIBlockSummary: Decodable {
+    public let blocks: [VIBlockInfo]
     public let length: Int
-    public let pagination: PaginationInfo
+    public let pagination: VIPaginationInfo
 }

@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ScriptPubKeyInfo: Decodable {
-    public let hex: String
-    public let asm: String
+public struct VIPoolInfo: Decodable {
+    public let poolName: String?
+    public let url: String?
 }

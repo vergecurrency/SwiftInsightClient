@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct Block: Decodable {
+public struct VIBlock: Decodable {
     public let hash: String
     public let size: Int
     public let height: Int
@@ -22,5 +22,5 @@ public struct Block: Decodable {
     public let nextblockhash: String
     public let reward: Int
     public let isMainChain: Bool
-    public let poolInfo: PoolInfo
+    public let poolInfo: VIPoolInfo
 }

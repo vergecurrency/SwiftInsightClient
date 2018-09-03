@@ -10,15 +10,15 @@
 		A35F334A2135C4D900F7B8FD /* InsightClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; };
 		A35F334F2135C4D900F7B8FD /* InsightClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F334E2135C4D900F7B8FD /* InsightClientTests.swift */; };
 		A35F33512135C4D900F7B8FD /* InsightClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A35F33432135C4D900F7B8FD /* InsightClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A35F335D2135C4EE00F7B8FD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F335B2135C4EE00F7B8FD /* Client.swift */; };
-		A35F336C2135C52600F7B8FD /* AddressSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33642135C52600F7B8FD /* AddressSummary.swift */; };
-		A35F336D2135C52600F7B8FD /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33652135C52600F7B8FD /* Block.swift */; };
-		A35F336E2135C52600F7B8FD /* BlockSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33662135C52600F7B8FD /* BlockSummary.swift */; };
-		A35F336F2135C52600F7B8FD /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33672135C52600F7B8FD /* ClientProtocol.swift */; };
-		A35F33702135C52600F7B8FD /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33682135C52600F7B8FD /* Info.swift */; };
-		A35F33712135C52600F7B8FD /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33692135C52600F7B8FD /* Transaction.swift */; };
-		A35F33722135C52600F7B8FD /* TransactionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F336A2135C52600F7B8FD /* TransactionSummary.swift */; };
-		A35F33732135C52600F7B8FD /* UnspentOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F336B2135C52600F7B8FD /* UnspentOutput.swift */; };
+		A35F335D2135C4EE00F7B8FD /* VIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F335B2135C4EE00F7B8FD /* VIClient.swift */; };
+		A35F336C2135C52600F7B8FD /* VIAddressSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33642135C52600F7B8FD /* VIAddressSummary.swift */; };
+		A35F336D2135C52600F7B8FD /* VIBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33652135C52600F7B8FD /* VIBlock.swift */; };
+		A35F336E2135C52600F7B8FD /* VIBlockSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33662135C52600F7B8FD /* VIBlockSummary.swift */; };
+		A35F336F2135C52600F7B8FD /* VIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33672135C52600F7B8FD /* VIClientProtocol.swift */; };
+		A35F33702135C52600F7B8FD /* VIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33682135C52600F7B8FD /* VIInfo.swift */; };
+		A35F33712135C52600F7B8FD /* VITransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F33692135C52600F7B8FD /* VITransaction.swift */; };
+		A35F33722135C52600F7B8FD /* VITransactionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F336A2135C52600F7B8FD /* VITransactionSummary.swift */; };
+		A35F33732135C52600F7B8FD /* VIUnspentOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F336B2135C52600F7B8FD /* VIUnspentOutput.swift */; };
 		A35F337B2135CCF200F7B8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F337A2135CCF200F7B8FD /* AppDelegate.swift */; };
 		A35F337D2135CCF200F7B8FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F337C2135CCF200F7B8FD /* ViewController.swift */; };
 		A35F33802135CCF200F7B8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35F337E2135CCF200F7B8FD /* Main.storyboard */; };
@@ -28,14 +28,18 @@
 		A35F33992135CD0F00F7B8FD /* InsightClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3D68323213B45E40067E0B9 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = A3D68322213B45E40067E0B9 /* Cartfile.private */; };
 		A3D68327213B469A0067E0B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D68326213B469A0067E0B9 /* SwiftyJSON.framework */; };
-		B2BD74771531D4121E7C7501 /* PaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7268FBB9AC5DBAB841FE /* PaginationInfo.swift */; };
+		A3D6834F213DC0A80067E0B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A3D6834E213DC0A80067E0B9 /* README.md */; };
+		A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */; };
+		A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */; };
+		A3D68355213DC3050067E0B9 /* VIAccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */; };
+		B2BD74771531D4121E7C7501 /* VIPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */; };
 		B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = B2BD730DE86446C43BFE29BB /* install.sh */; };
 		B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2BD727BB43C27B0AD103A67 /* .travis.yml */; };
-		B2BD7A1BEB103953D20CF2CB /* ScriptPubKeyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7B62746F0E3E6AB99792 /* ScriptPubKeyInfo.swift */; };
-		B2BD7A5D2710F9A2C6F63CF9 /* PoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75898DDEC6EB1B961D0F /* PoolInfo.swift */; };
-		B2BD7B63CA3D6F029CEC593A /* BlockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75580CFDDF22606D027E /* BlockInfo.swift */; };
-		B2BD7C160391EA57CA682CC5 /* TransactionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7E92C3A2746012B33849 /* TransactionCollection.swift */; };
-		B2BD7C8EB4B68D3135F15D18 /* LastBlockIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD71A356E1F71FC849B7D5 /* LastBlockIdentity.swift */; };
+		B2BD7A1BEB103953D20CF2CB /* VIScriptPubKeyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */; };
+		B2BD7A5D2710F9A2C6F63CF9 /* VIPoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75898DDEC6EB1B961D0F /* VIPoolInfo.swift */; };
+		B2BD7B63CA3D6F029CEC593A /* VIBlockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75580CFDDF22606D027E /* VIBlockInfo.swift */; };
+		B2BD7C160391EA57CA682CC5 /* VITransactionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */; };
+		B2BD7C8EB4B68D3135F15D18 /* VILastBlockIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +87,15 @@
 		A35F33492135C4D900F7B8FD /* InsightClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsightClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35F334E2135C4D900F7B8FD /* InsightClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightClientTests.swift; sourceTree = "<group>"; };
 		A35F33502135C4D900F7B8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A35F335B2135C4EE00F7B8FD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		A35F33642135C52600F7B8FD /* AddressSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSummary.swift; sourceTree = "<group>"; };
-		A35F33652135C52600F7B8FD /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
-		A35F33662135C52600F7B8FD /* BlockSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSummary.swift; sourceTree = "<group>"; };
-		A35F33672135C52600F7B8FD /* ClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
-		A35F33682135C52600F7B8FD /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
-		A35F33692135C52600F7B8FD /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		A35F336A2135C52600F7B8FD /* TransactionSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionSummary.swift; sourceTree = "<group>"; };
-		A35F336B2135C52600F7B8FD /* UnspentOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnspentOutput.swift; sourceTree = "<group>"; };
+		A35F335B2135C4EE00F7B8FD /* VIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIClient.swift; sourceTree = "<group>"; };
+		A35F33642135C52600F7B8FD /* VIAddressSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIAddressSummary.swift; sourceTree = "<group>"; };
+		A35F33652135C52600F7B8FD /* VIBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBlock.swift; sourceTree = "<group>"; };
+		A35F33662135C52600F7B8FD /* VIBlockSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBlockSummary.swift; sourceTree = "<group>"; };
+		A35F33672135C52600F7B8FD /* VIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIClientProtocol.swift; sourceTree = "<group>"; };
+		A35F33682135C52600F7B8FD /* VIInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIInfo.swift; sourceTree = "<group>"; };
+		A35F33692135C52600F7B8FD /* VITransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VITransaction.swift; sourceTree = "<group>"; };
+		A35F336A2135C52600F7B8FD /* VITransactionSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VITransactionSummary.swift; sourceTree = "<group>"; };
+		A35F336B2135C52600F7B8FD /* VIUnspentOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIUnspentOutput.swift; sourceTree = "<group>"; };
 		A35F33782135CCF200F7B8FD /* InsightClient-TestHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InsightClient-TestHostApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35F337A2135CCF200F7B8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A35F337C2135CCF200F7B8FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,14 +105,18 @@
 		A35F33862135CCF300F7B8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3D68322213B45E40067E0B9 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		A3D68326213B469A0067E0B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
-		B2BD71A356E1F71FC849B7D5 /* LastBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastBlockIdentity.swift; sourceTree = "<group>"; };
-		B2BD7268FBB9AC5DBAB841FE /* PaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationInfo.swift; sourceTree = "<group>"; };
+		A3D6834E213DC0A80067E0B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITransactionProtocol.swift; sourceTree = "<group>"; };
+		A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBlockProtocol.swift; sourceTree = "<group>"; };
+		A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIAccountProtocol.swift; sourceTree = "<group>"; };
+		B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VILastBlockIdentity.swift; sourceTree = "<group>"; };
+		B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPaginationInfo.swift; sourceTree = "<group>"; };
 		B2BD727BB43C27B0AD103A67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		B2BD730DE86446C43BFE29BB /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
-		B2BD75580CFDDF22606D027E /* BlockInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockInfo.swift; sourceTree = "<group>"; };
-		B2BD75898DDEC6EB1B961D0F /* PoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolInfo.swift; sourceTree = "<group>"; };
-		B2BD7B62746F0E3E6AB99792 /* ScriptPubKeyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptPubKeyInfo.swift; sourceTree = "<group>"; };
-		B2BD7E92C3A2746012B33849 /* TransactionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCollection.swift; sourceTree = "<group>"; };
+		B2BD75580CFDDF22606D027E /* VIBlockInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBlockInfo.swift; sourceTree = "<group>"; };
+		B2BD75898DDEC6EB1B961D0F /* VIPoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPoolInfo.swift; sourceTree = "<group>"; };
+		B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIScriptPubKeyInfo.swift; sourceTree = "<group>"; };
+		B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VITransactionCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +150,15 @@
 		A35F33362135C4D900F7B8FD = {
 			isa = PBXGroup;
 			children = (
+				A3D6834E213DC0A80067E0B9 /* README.md */,
 				A3D68322213B45E40067E0B9 /* Cartfile.private */,
+				B2BD730DE86446C43BFE29BB /* install.sh */,
 				B2BD727BB43C27B0AD103A67 /* .travis.yml */,
 				A35F33422135C4D900F7B8FD /* InsightClient */,
 				A35F334D2135C4D900F7B8FD /* InsightClientTests */,
 				A35F33792135CCF200F7B8FD /* InsightClient-TestHostApp */,
 				A35F33412135C4D900F7B8FD /* Products */,
 				A3D68325213B46750067E0B9 /* Frameworks */,
-				B2BD730DE86446C43BFE29BB /* install.sh */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,8 +177,11 @@
 			children = (
 				A35F33432135C4D900F7B8FD /* InsightClient.h */,
 				A35F33442135C4D900F7B8FD /* Info.plist */,
-				A35F335B2135C4EE00F7B8FD /* Client.swift */,
-				A35F33672135C52600F7B8FD /* ClientProtocol.swift */,
+				A35F335B2135C4EE00F7B8FD /* VIClient.swift */,
+				A35F33672135C52600F7B8FD /* VIClientProtocol.swift */,
+				A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */,
+				A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */,
+				A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */,
 				B2BD7BB385D40DB19EE50397 /* Structs */,
 			);
 			path = InsightClient;
@@ -208,19 +220,19 @@
 		B2BD7BB385D40DB19EE50397 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				A35F33682135C52600F7B8FD /* Info.swift */,
-				A35F33642135C52600F7B8FD /* AddressSummary.swift */,
-				A35F33652135C52600F7B8FD /* Block.swift */,
-				A35F33662135C52600F7B8FD /* BlockSummary.swift */,
-				A35F336B2135C52600F7B8FD /* UnspentOutput.swift */,
-				B2BD75898DDEC6EB1B961D0F /* PoolInfo.swift */,
-				B2BD75580CFDDF22606D027E /* BlockInfo.swift */,
-				B2BD7268FBB9AC5DBAB841FE /* PaginationInfo.swift */,
-				B2BD71A356E1F71FC849B7D5 /* LastBlockIdentity.swift */,
-				A35F33692135C52600F7B8FD /* Transaction.swift */,
-				A35F336A2135C52600F7B8FD /* TransactionSummary.swift */,
-				B2BD7B62746F0E3E6AB99792 /* ScriptPubKeyInfo.swift */,
-				B2BD7E92C3A2746012B33849 /* TransactionCollection.swift */,
+				A35F33682135C52600F7B8FD /* VIInfo.swift */,
+				A35F33642135C52600F7B8FD /* VIAddressSummary.swift */,
+				A35F33652135C52600F7B8FD /* VIBlock.swift */,
+				B2BD75580CFDDF22606D027E /* VIBlockInfo.swift */,
+				A35F33662135C52600F7B8FD /* VIBlockSummary.swift */,
+				A35F336B2135C52600F7B8FD /* VIUnspentOutput.swift */,
+				B2BD75898DDEC6EB1B961D0F /* VIPoolInfo.swift */,
+				B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */,
+				B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */,
+				A35F33692135C52600F7B8FD /* VITransaction.swift */,
+				B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */,
+				A35F336A2135C52600F7B8FD /* VITransactionSummary.swift */,
+				B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -346,6 +358,7 @@
 			files = (
 				A3D68323213B45E40067E0B9 /* Cartfile.private in Resources */,
 				B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */,
+				A3D6834F213DC0A80067E0B9 /* README.md in Resources */,
 				B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,21 +405,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35F33732135C52600F7B8FD /* UnspentOutput.swift in Sources */,
-				A35F33712135C52600F7B8FD /* Transaction.swift in Sources */,
-				A35F336F2135C52600F7B8FD /* ClientProtocol.swift in Sources */,
-				A35F336D2135C52600F7B8FD /* Block.swift in Sources */,
-				A35F335D2135C4EE00F7B8FD /* Client.swift in Sources */,
-				A35F33702135C52600F7B8FD /* Info.swift in Sources */,
-				A35F336E2135C52600F7B8FD /* BlockSummary.swift in Sources */,
-				A35F336C2135C52600F7B8FD /* AddressSummary.swift in Sources */,
-				A35F33722135C52600F7B8FD /* TransactionSummary.swift in Sources */,
-				B2BD7A5D2710F9A2C6F63CF9 /* PoolInfo.swift in Sources */,
-				B2BD7B63CA3D6F029CEC593A /* BlockInfo.swift in Sources */,
-				B2BD74771531D4121E7C7501 /* PaginationInfo.swift in Sources */,
-				B2BD7C8EB4B68D3135F15D18 /* LastBlockIdentity.swift in Sources */,
-				B2BD7A1BEB103953D20CF2CB /* ScriptPubKeyInfo.swift in Sources */,
-				B2BD7C160391EA57CA682CC5 /* TransactionCollection.swift in Sources */,
+				A35F33732135C52600F7B8FD /* VIUnspentOutput.swift in Sources */,
+				A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */,
+				A35F33712135C52600F7B8FD /* VITransaction.swift in Sources */,
+				A35F336F2135C52600F7B8FD /* VIClientProtocol.swift in Sources */,
+				A35F336D2135C52600F7B8FD /* VIBlock.swift in Sources */,
+				A35F335D2135C4EE00F7B8FD /* VIClient.swift in Sources */,
+				A35F33702135C52600F7B8FD /* VIInfo.swift in Sources */,
+				A35F336E2135C52600F7B8FD /* VIBlockSummary.swift in Sources */,
+				A35F336C2135C52600F7B8FD /* VIAddressSummary.swift in Sources */,
+				A35F33722135C52600F7B8FD /* VITransactionSummary.swift in Sources */,
+				A3D68355213DC3050067E0B9 /* VIAccountProtocol.swift in Sources */,
+				B2BD7A5D2710F9A2C6F63CF9 /* VIPoolInfo.swift in Sources */,
+				B2BD7B63CA3D6F029CEC593A /* VIBlockInfo.swift in Sources */,
+				B2BD74771531D4121E7C7501 /* VIPaginationInfo.swift in Sources */,
+				B2BD7C8EB4B68D3135F15D18 /* VILastBlockIdentity.swift in Sources */,
+				A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */,
+				B2BD7A1BEB103953D20CF2CB /* VIScriptPubKeyInfo.swift in Sources */,
+				B2BD7C160391EA57CA682CC5 /* VITransactionCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

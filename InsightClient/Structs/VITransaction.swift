@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Transaction: Decodable {
+public struct VITransaction: Decodable {
     public let txid: String
     public let version: Int
     public let locktime: Int

@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct LastBlockIdentity: Decodable {
-    public let syncTipHash: String
-    public let lastblockhash: String
+public struct VIScriptPubKeyInfo: Decodable {
+    public let hex: String
+    public let asm: String
 }
