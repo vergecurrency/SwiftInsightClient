@@ -17,7 +17,7 @@ public struct Transaction: Decodable {
     public let confirmations: Int
     public let time: Int
     public let blocktime: Int
-    public let isCoinBase: Bool = false
+    public let isCoinBase: Bool?
     public let valueOut: Double
     public let size: Int
     public let valueIn: Double?

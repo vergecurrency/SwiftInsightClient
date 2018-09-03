@@ -84,7 +84,7 @@ public class Client: ClientProtocol {
 
     public func getAddressValidation(address: String, completion: @escaping (Bool) -> Void) {
         get(url: url("/addr-validate/\(address)")) { data in
-            completion(String(data: data!, encoding: .utf8) == "true")
+            completion(String(data: data ?? Data(), encoding: .utf8) == "true")
         }
     }
 
@@ -106,25 +106,25 @@ public class Client: ClientProtocol {
 
     public func getBalance(address: String, completion: @escaping (Int?) -> Void) {
         get(url: url("/addr/\(address)/balance")) { data in
-            completion(Int(String(data: data!, encoding: .utf8) ?? "0"))
+            completion(Int(String(data: data ?? Data(), encoding: .utf8) ?? "0"))
         }
     }
 
     public func getTotalReceived(address: String, completion: @escaping (Int?) -> Void) {
         get(url: url("/addr/\(address)/totalReceived")) { data in
-            completion(Int(String(data: data!, encoding: .utf8) ?? "0"))
+            completion(Int(String(data: data ?? Data(), encoding: .utf8) ?? "0"))
         }
     }
 
     public func getTotalSent(address: String, completion: @escaping (Int?) -> Void) {
         get(url: url("/addr/\(address)/totalSent")) { data in
-            completion(Int(String(data: data!, encoding: .utf8) ?? "0"))
+            completion(Int(String(data: data ?? Data(), encoding: .utf8) ?? "0"))
         }
     }
 
     public func getUnconfirmedBalance(address: String, completion: @escaping (Int?) -> Void) {
         get(url: url("/addr/\(address)/unconfirmedBalance")) { data in
-            completion(Int(String(data: data!, encoding: .utf8) ?? "0"))
+            completion(Int(String(data: data ?? Data(), encoding: .utf8) ?? "0"))
         }
     }
 
@@ -178,8 +178,12 @@ public class Client: ClientProtocol {
     public func getBlockHash(index: Int, completion: @escaping (String?) -> Void) {
         get(url: url("/block-index/\(index)")) { data in
             do {
-                let json = try JSON(data: data!)
-                completion(json["blockHash"].stringValue)
+                if let data = data {
+                    let json = try JSON(data: data)
+                    completion(json["blockHash"].stringValue)
+                } else {
+                    completion(nil)
+                }
             } catch {
                 print("Error info: \(error)")
                 completion(nil)
