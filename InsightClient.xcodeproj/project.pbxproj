@@ -26,12 +26,13 @@
 		A35F33852135CCF300F7B8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35F33832135CCF300F7B8FD /* LaunchScreen.storyboard */; };
 		A35F33982135CD0F00F7B8FD /* InsightClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; };
 		A35F33992135CD0F00F7B8FD /* InsightClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A3D68323213B45E40067E0B9 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = A3D68322213B45E40067E0B9 /* Cartfile.private */; };
+		A3D68323213B45E40067E0B9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = A3D68322213B45E40067E0B9 /* Cartfile */; };
 		A3D6834F213DC0A80067E0B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A3D6834E213DC0A80067E0B9 /* README.md */; };
 		A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */; };
 		A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */; };
 		A3D68355213DC3050067E0B9 /* VIAccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */; };
 		A3D6835A213DE6750067E0B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */; };
+		A3D6835C213DE7A00067E0B9 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */; };
 		B2BD74771531D4121E7C7501 /* VIPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */; };
 		B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = B2BD730DE86446C43BFE29BB /* install.sh */; };
 		B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2BD727BB43C27B0AD103A67 /* .travis.yml */; };
@@ -103,12 +104,13 @@
 		A35F33812135CCF300F7B8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35F33842135CCF300F7B8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35F33862135CCF300F7B8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3D68322213B45E40067E0B9 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		A3D68322213B45E40067E0B9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A3D6834E213DC0A80067E0B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITransactionProtocol.swift; sourceTree = "<group>"; };
 		A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBlockProtocol.swift; sourceTree = "<group>"; };
 		A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIAccountProtocol.swift; sourceTree = "<group>"; };
 		A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VILastBlockIdentity.swift; sourceTree = "<group>"; };
 		B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPaginationInfo.swift; sourceTree = "<group>"; };
 		B2BD727BB43C27B0AD103A67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
@@ -151,7 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				A3D6834E213DC0A80067E0B9 /* README.md */,
-				A3D68322213B45E40067E0B9 /* Cartfile.private */,
+				A3D68322213B45E40067E0B9 /* Cartfile */,
+				A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */,
 				B2BD730DE86446C43BFE29BB /* install.sh */,
 				B2BD727BB43C27B0AD103A67 /* .travis.yml */,
 				A35F33422135C4D900F7B8FD /* InsightClient */,
@@ -356,9 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D68323213B45E40067E0B9 /* Cartfile.private in Resources */,
+				A3D68323213B45E40067E0B9 /* Cartfile in Resources */,
 				B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */,
 				A3D6834F213DC0A80067E0B9 /* README.md in Resources */,
+				A3D6835C213DE7A00067E0B9 /* Cartfile.resolved in Resources */,
 				B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
