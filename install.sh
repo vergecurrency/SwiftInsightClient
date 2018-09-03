@@ -1,4 +1,3 @@
 #!/bin/bash
 
-gem install xcpretty && \
-carthage update --platform iOS
+gem install xcpretty
