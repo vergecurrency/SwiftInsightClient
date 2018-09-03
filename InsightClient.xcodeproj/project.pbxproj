@@ -27,7 +27,6 @@
 		A35F33982135CD0F00F7B8FD /* InsightClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; };
 		A35F33992135CD0F00F7B8FD /* InsightClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3D68323213B45E40067E0B9 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = A3D68322213B45E40067E0B9 /* Cartfile.private */; };
-		A3D68327213B469A0067E0B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D68326213B469A0067E0B9 /* SwiftyJSON.framework */; };
 		A3D6834F213DC0A80067E0B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A3D6834E213DC0A80067E0B9 /* README.md */; };
 		A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */; };
 		A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */; };
@@ -104,7 +103,6 @@
 		A35F33842135CCF300F7B8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35F33862135CCF300F7B8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3D68322213B45E40067E0B9 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
-		A3D68326213B469A0067E0B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		A3D6834E213DC0A80067E0B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITransactionProtocol.swift; sourceTree = "<group>"; };
 		A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBlockProtocol.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D68327213B469A0067E0B9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +155,6 @@
 				A35F334D2135C4D900F7B8FD /* InsightClientTests */,
 				A35F33792135CCF200F7B8FD /* InsightClient-TestHostApp */,
 				A35F33412135C4D900F7B8FD /* Products */,
-				A3D68325213B46750067E0B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,14 +203,6 @@
 				A35F33862135CCF300F7B8FD /* Info.plist */,
 			);
 			path = "InsightClient-TestHostApp";
-			sourceTree = "<group>";
-		};
-		A3D68325213B46750067E0B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3D68326213B469A0067E0B9 /* SwiftyJSON.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		B2BD7BB385D40DB19EE50397 /* Structs */ = {
