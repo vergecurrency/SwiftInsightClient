@@ -31,6 +31,7 @@
 		A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */; };
 		A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */; };
 		A3D68355213DC3050067E0B9 /* VIAccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */; };
+		A3D6835A213DE6750067E0B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */; };
 		B2BD74771531D4121E7C7501 /* VIPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */; };
 		B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = B2BD730DE86446C43BFE29BB /* install.sh */; };
 		B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2BD727BB43C27B0AD103A67 /* .travis.yml */; };
@@ -107,6 +108,7 @@
 		A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITransactionProtocol.swift; sourceTree = "<group>"; };
 		A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBlockProtocol.swift; sourceTree = "<group>"; };
 		A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIAccountProtocol.swift; sourceTree = "<group>"; };
+		A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 		B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VILastBlockIdentity.swift; sourceTree = "<group>"; };
 		B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPaginationInfo.swift; sourceTree = "<group>"; };
 		B2BD727BB43C27B0AD103A67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D6835A213DE6750067E0B9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +158,7 @@
 				A35F334D2135C4D900F7B8FD /* InsightClientTests */,
 				A35F33792135CCF200F7B8FD /* InsightClient-TestHostApp */,
 				A35F33412135C4D900F7B8FD /* Products */,
+				A3D68358213DE6600067E0B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +207,14 @@
 				A35F33862135CCF300F7B8FD /* Info.plist */,
 			);
 			path = "InsightClient-TestHostApp";
+			sourceTree = "<group>";
+		};
+		A3D68358213DE6600067E0B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		B2BD7BB385D40DB19EE50397 /* Structs */ = {
@@ -606,6 +618,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = InsightClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -639,6 +652,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = InsightClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
