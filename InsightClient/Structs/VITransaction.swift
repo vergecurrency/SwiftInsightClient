@@ -21,5 +21,5 @@ public struct VITransaction: Decodable {
     public let valueOut: Double
     public let size: Int
     public let valueIn: Double?
-    public let fees: Int?
+    public let fees: Double?
 }
