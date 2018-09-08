@@ -26,21 +26,22 @@
 		A35F33852135CCF300F7B8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35F33832135CCF300F7B8FD /* LaunchScreen.storyboard */; };
 		A35F33982135CD0F00F7B8FD /* InsightClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; };
 		A35F33992135CD0F00F7B8FD /* InsightClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A35F33402135C4D900F7B8FD /* InsightClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A3D68323213B45E40067E0B9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = A3D68322213B45E40067E0B9 /* Cartfile */; };
 		A3D6834F213DC0A80067E0B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A3D6834E213DC0A80067E0B9 /* README.md */; };
 		A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */; };
 		A3D68353213DC2DF0067E0B9 /* VIBlockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */; };
 		A3D68355213DC3050067E0B9 /* VIAccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */; };
-		A3D6835A213DE6750067E0B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */; };
-		A3D6835C213DE7A00067E0B9 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */; };
+		B2BD73523A1202F01BDFEA8E /* VITransactionIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7E7D02C50862915A5958 /* VITransactionIdentity.swift */; };
 		B2BD74771531D4121E7C7501 /* VIPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */; };
 		B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = B2BD730DE86446C43BFE29BB /* install.sh */; };
 		B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2BD727BB43C27B0AD103A67 /* .travis.yml */; };
+		B2BD7970331647AB26458F4D /* VIBestBlockIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD79ECEA45BF81C6CDCED5 /* VIBestBlockIdentity.swift */; };
 		B2BD7A1BEB103953D20CF2CB /* VIScriptPubKeyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */; };
 		B2BD7A5D2710F9A2C6F63CF9 /* VIPoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75898DDEC6EB1B961D0F /* VIPoolInfo.swift */; };
+		B2BD7A6959FC78E78CAB0986 /* VIDifficultyIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7738E3B1BAD00E3BA20D /* VIDifficultyIdentity.swift */; };
 		B2BD7B63CA3D6F029CEC593A /* VIBlockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD75580CFDDF22606D027E /* VIBlockInfo.swift */; };
 		B2BD7C160391EA57CA682CC5 /* VITransactionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */; };
 		B2BD7C8EB4B68D3135F15D18 /* VILastBlockIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */; };
+		B2BD7EA104C70676A8940349 /* VIBlockIndexIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD71F2700BBEEC73B886D5 /* VIBlockIndexIdentity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,20 +105,21 @@
 		A35F33812135CCF300F7B8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35F33842135CCF300F7B8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35F33862135CCF300F7B8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3D68322213B45E40067E0B9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A3D6834E213DC0A80067E0B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3D68350213DC2A40067E0B9 /* VITransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VITransactionProtocol.swift; sourceTree = "<group>"; };
 		A3D68352213DC2DF0067E0B9 /* VIBlockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIBlockProtocol.swift; sourceTree = "<group>"; };
 		A3D68354213DC3050067E0B9 /* VIAccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIAccountProtocol.swift; sourceTree = "<group>"; };
-		A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
-		A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		B2BD71A356E1F71FC849B7D5 /* VILastBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VILastBlockIdentity.swift; sourceTree = "<group>"; };
+		B2BD71F2700BBEEC73B886D5 /* VIBlockIndexIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBlockIndexIdentity.swift; sourceTree = "<group>"; };
 		B2BD7268FBB9AC5DBAB841FE /* VIPaginationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPaginationInfo.swift; sourceTree = "<group>"; };
 		B2BD727BB43C27B0AD103A67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		B2BD730DE86446C43BFE29BB /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		B2BD75580CFDDF22606D027E /* VIBlockInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBlockInfo.swift; sourceTree = "<group>"; };
 		B2BD75898DDEC6EB1B961D0F /* VIPoolInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPoolInfo.swift; sourceTree = "<group>"; };
+		B2BD7738E3B1BAD00E3BA20D /* VIDifficultyIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIDifficultyIdentity.swift; sourceTree = "<group>"; };
+		B2BD79ECEA45BF81C6CDCED5 /* VIBestBlockIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIBestBlockIdentity.swift; sourceTree = "<group>"; };
 		B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIScriptPubKeyInfo.swift; sourceTree = "<group>"; };
+		B2BD7E7D02C50862915A5958 /* VITransactionIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VITransactionIdentity.swift; sourceTree = "<group>"; };
 		B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VITransactionCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D6835A213DE6750067E0B9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,15 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				A3D6834E213DC0A80067E0B9 /* README.md */,
-				A3D68322213B45E40067E0B9 /* Cartfile */,
-				A3D6835B213DE7A00067E0B9 /* Cartfile.resolved */,
 				B2BD730DE86446C43BFE29BB /* install.sh */,
 				B2BD727BB43C27B0AD103A67 /* .travis.yml */,
 				A35F33422135C4D900F7B8FD /* InsightClient */,
 				A35F334D2135C4D900F7B8FD /* InsightClientTests */,
 				A35F33792135CCF200F7B8FD /* InsightClient-TestHostApp */,
 				A35F33412135C4D900F7B8FD /* Products */,
-				A3D68358213DE6600067E0B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,14 +210,6 @@
 			path = "InsightClient-TestHostApp";
 			sourceTree = "<group>";
 		};
-		A3D68358213DE6600067E0B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3D68359213DE6750067E0B9 /* SwiftyJSON.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		B2BD7BB385D40DB19EE50397 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +226,10 @@
 				B2BD7E92C3A2746012B33849 /* VITransactionCollection.swift */,
 				A35F336A2135C52600F7B8FD /* VITransactionSummary.swift */,
 				B2BD7B62746F0E3E6AB99792 /* VIScriptPubKeyInfo.swift */,
+				B2BD7738E3B1BAD00E3BA20D /* VIDifficultyIdentity.swift */,
+				B2BD79ECEA45BF81C6CDCED5 /* VIBestBlockIdentity.swift */,
+				B2BD71F2700BBEEC73B886D5 /* VIBlockIndexIdentity.swift */,
+				B2BD7E7D02C50862915A5958 /* VITransactionIdentity.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -359,10 +353,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D68323213B45E40067E0B9 /* Cartfile in Resources */,
 				B2BD760C40A1A2987A57C619 /* .travis.yml in Resources */,
 				A3D6834F213DC0A80067E0B9 /* README.md in Resources */,
-				A3D6835C213DE7A00067E0B9 /* Cartfile.resolved in Resources */,
 				B2BD75B9D67F5191A6C86CD7 /* install.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +419,10 @@
 				A3D68351213DC2A40067E0B9 /* VITransactionProtocol.swift in Sources */,
 				B2BD7A1BEB103953D20CF2CB /* VIScriptPubKeyInfo.swift in Sources */,
 				B2BD7C160391EA57CA682CC5 /* VITransactionCollection.swift in Sources */,
+				B2BD7A6959FC78E78CAB0986 /* VIDifficultyIdentity.swift in Sources */,
+				B2BD7970331647AB26458F4D /* VIBestBlockIdentity.swift in Sources */,
+				B2BD7EA104C70676A8940349 /* VIBlockIndexIdentity.swift in Sources */,
+				B2BD73523A1202F01BDFEA8E /* VITransactionIdentity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

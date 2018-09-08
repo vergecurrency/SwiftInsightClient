@@ -61,7 +61,7 @@ class InsightClientTests: XCTestCase {
         session.nextData = data
 
         client.getDifficulty { difficulty in
-            XCTAssert(difficulty == "6727225469722.534")
+            XCTAssert(difficulty == 6727225469722.534)
         }
     }
 

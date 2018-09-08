@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 public class VIClient: VIClientProtocol {
 
@@ -40,11 +39,11 @@ public class VIClient: VIClientProtocol {
                 return completion(nil)
             }
 
-            guard let json = try? JSON(data: data!) else {
-                return completion(nil)
-            }
+            let identity = self.decodeJson(
+                VITransactionIdentity.self, from: data, default: []
+            ) as? VITransactionIdentity
 
-            completion(json["txid"].stringValue)
+            completion(identity?.txid)
         }
 
         task.resume()
@@ -56,23 +55,23 @@ public class VIClient: VIClientProtocol {
         }
     }
 
-    public func getDifficulty(completion: @escaping (String?) -> Void) {
+    public func getDifficulty(completion: @escaping (Double?) -> Void) {
         get(url: url("/status?q=getDifficulty")) { data in
-            guard let json = try? JSON(data: data ?? Data()) else {
-                return completion(nil)
-            }
+            let identity = self.decodeJson(
+                VIDifficultyIdentity.self, from: data, default: []
+            ) as? VIDifficultyIdentity
 
-            completion(json["difficulty"].stringValue)
+            completion(identity?.difficulty)
         }
     }
 
     public func getBestBlockHash(completion: @escaping (String?) -> Void) {
         get(url: url("/status?q=getBestBlockHash")) { data in
-            guard let json = try? JSON(data: data ?? Data()) else {
-                return completion(nil)
-            }
+            let identity = self.decodeJson(
+                VIBestBlockIdentity.self, from: data, default: []
+            ) as? VIBestBlockIdentity
 
-            completion(json["bestblockhash"].stringValue)
+            completion(identity?.bestblockhash)
         }
     }
 
@@ -177,17 +176,11 @@ public class VIClient: VIClientProtocol {
 
     public func getBlockHash(index: Int, completion: @escaping (String?) -> Void) {
         get(url: url("/block-index/\(index)")) { data in
-            do {
-                if let data = data {
-                    let json = try JSON(data: data)
-                    completion(json["blockHash"].stringValue)
-                } else {
-                    completion(nil)
-                }
-            } catch {
-                print("Error info: \(error)")
-                completion(nil)
-            }
+            let identity = self.decodeJson(
+                VIBlockIndexIdentity.self, from: data, default: []
+            ) as? VIBlockIndexIdentity
+
+            completion(identity?.blockHash)
         }
     }
 

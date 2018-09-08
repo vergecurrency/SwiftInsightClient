@@ -19,7 +19,7 @@ public protocol VIClientProtocol: VIAccountProtocol, VIBlockProtocol, VITransact
      * All infos in one
      */
     func getInfo(completion: @escaping (_ info: VIInfo?) -> Void)
-    func getDifficulty(completion: @escaping (_ difficulty: String?) -> Void)
+    func getDifficulty(completion: @escaping (_ difficulty: Double?) -> Void)
     func getBestBlockHash(completion: @escaping (_ hash: String?) -> Void)
     func getLastBlockHash(completion: @escaping (_ hash: VILastBlockIdentity?) -> Void)
     
