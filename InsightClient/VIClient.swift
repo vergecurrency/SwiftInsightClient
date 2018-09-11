@@ -20,7 +20,7 @@ public class VIClient: VIClientProtocol {
 
     public func postTransaction(rawTransaction: String, completion: @escaping (String?) -> Void) {
         let parameterDictionary = ["rawtx" : rawTransaction]
-        let url = self.url("/api/tx/send")
+        let url = self.url("/tx/send")
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
